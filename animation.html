@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+   
+
+ }   /* 
+    @keyframes color-change{
+        from{
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            
+        }
+        to{
+            background-color: green;
+        }
+    } */
+    .box{
+        border: 2px solid black;
+        height: 200px;
+        position: relative;
+        width: 100px;
+        animation-name: animation;
+        animation-duration: 3s; 
+        animation-iteration-count: infinite;
+    }
+    /* @keyframes animation{
+        0%{
+           top:0;
+           left: 24px;
+        }
+        25%{
+            top: 240px;
+            left: 240px;
+        }
+        50%{
+            top: 240px;
+            left: 0;
+        }
+       75%{
+            top: 0;
+            left: 0;
+        }
+        100%{
+            top:0;
+            left: 24px;
+        }
+    } */
+     .filled{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        animation-name: fill;
+        animation-duration: 6s;
+        animation-iteration-count: 1;
+
+     }
+     @keyframes fill{
+        0%{
+            height: 25%;
+            background-color: red;
+        }
+        25%{
+            height: 50%;
+            background-color: orange;
+        }
+        50%{
+            height: 60%;
+            background-color: yellow;
+        }
+        75%{
+            height: 90%;
+            background-color: lightgreen;
+        }
+        100%{
+            height: 100%;
+            background-color: green;
+        }
+     }
+</style>
+<body>
+  <div class="box">
+    <div class="filled"></div>
+  </div>  
+</body>
+</html>
