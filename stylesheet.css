@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(169, 198, 223);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table{
+    background-color: aliceblue;
+    /* width: 80px; */
+    margin: auto;
+    border-collapse: collapse;
+}
+th,td{
+    border: apx solid gray;
+    padding: 10px;
+    text-align: center;
+
+}
+th{
+    background-color: blue;
+    color: white;
+}
+.hr:hover{
+background-color: rgb(11, 65, 65);
+color: rgb(248, 244, 244);
+}
